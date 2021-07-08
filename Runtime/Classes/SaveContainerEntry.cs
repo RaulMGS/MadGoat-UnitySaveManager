@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NorthernLights.Engine.Saves {  
+namespace MGFramework.Saves {  
     [System.Serializable]
     public class SaveContainerEntry {
         [SerializeField]

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ISaveable 
-{
-    void OnGameLoaded();
-    void OnGameSaving();
+namespace MGFramework.Saves {
+    public interface ISaveable {
+        void OnGameLoaded();
+        void OnGameSaving();
+    }
 }

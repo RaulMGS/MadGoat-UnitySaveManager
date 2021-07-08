@@ -1,7 +1,9 @@
 {
     "name": "MadGoat.SaveManager",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:ad7149bb3580d964ea7060901fe51ed9"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -9,6 +11,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.madgoatstudio.core",
+            "expression": "",
+            "define": ""
+        }
+    ],
     "noEngineReferences": false
 }

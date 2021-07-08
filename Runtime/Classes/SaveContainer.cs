@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json.Linq;
-namespace NorthernLights.Engine.Saves {
+namespace MGFramework.Saves {
     [System.Serializable]
     public class SaveContainer {
         [SerializeField]

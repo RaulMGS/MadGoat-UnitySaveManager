@@ -1,7 +1,7 @@
 {
   "name": "com.madgoatstudio.savemanager",
   "version": "2021.1.0",
-  "displayName": "MadGoat - Save Manager",
+  "displayName": "MGFramework - Save Manager",
   "unity": "2019.4",
   "documentationUrl": "https://example.com/",
   "changelogUrl": "https://example.com/changelog.html",

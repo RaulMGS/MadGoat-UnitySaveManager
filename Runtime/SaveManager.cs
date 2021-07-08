@@ -5,9 +5,9 @@ using System.IO;
 using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
 using System;
-using System.Linq;
+using System.Linq; 
 
-namespace NorthernLights.Engine.Saves {
+namespace MGFramework.Saves {
     [ExecuteAlways]
     public class SaveManager : MonoBehaviour {
         public const string MANAGER_VERSION = "1.0.0";
@@ -47,7 +47,24 @@ namespace NorthernLights.Engine.Saves {
                 DontDestroyOnLoad(this);
             }
         }
-        
+
+        /// <summary>
+        /// Returns the seed of the current save's playthrough.
+        /// </summary>
+        /// <returns></returns>
+        public int GetSeedOfPlaythrough() {
+            if (currentSaveContents == null) return 0;
+
+            var metaContainer = ReadContainer(META_KEY);
+            if (metaContainer == null) return 0;
+            var sessionId = metaContainer.GetEntry<string>(META_KEY_SESSION);
+
+
+            int result;
+            int.TryParse(sessionId.Replace("_", ""), out result);
+            return result;
+        }
+
         /// <summary>
         /// Updates a save container. If the container is not already in the save contents it will be added
         /// </summary>
