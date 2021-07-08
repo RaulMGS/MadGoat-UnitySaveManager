@@ -1,0 +1,14 @@
+{
+  "name": "com.madgoatstudio.savemanager",
+  "version": "2021.1.0",
+  "displayName": "MadGoat - Save Manager",
+  "unity": "2019.4",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "author": {
+    "name": "Raul Turcus @ MadGoat Studio",
+    "email": "raul.t@northernlightsgame.com",
+    "url": "https://madgoat-studio.com/"
+  }
+}
